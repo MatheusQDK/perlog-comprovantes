@@ -1,0 +1,10 @@
+// Copie este arquivo para supabase_config.dart
+// Nunca coloque a service_role key aqui.
+
+class SupabaseConfig {
+  static const String url =
+      'https://ybokwoykfhvqfqezvcap.supabase.co';
+
+  // Coloque aqui a anon public key do Supabase
+  static const String anonKey = 'COLE_SUA_ANON_KEY';
+}
