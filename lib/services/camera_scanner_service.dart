@@ -8,4 +8,14 @@ class CameraScannerService {
 
     return result ?? <String>[];
   }
+
+  Future<List<String>> scanReceiptBatch() async {
+    final images = await scanDocuments();
+
+    // Próxima integração:
+    // 1. ajustar comprovante para 6x6 cm
+    // 2. enviar para Supabase Storage
+    // 3. registrar na tabela comprovantes
+    return images;
+  }
 }
